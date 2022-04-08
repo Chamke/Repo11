@@ -6,18 +6,15 @@ function myMutation(arr){
    var word2 = arr[1].toLowerCase().split("").sort();
 var counter = 0;
 var count = 0;
- for (var i = 0; i < word.length; i++){
+ for (var i = 0; i < word2.length; i++){
     for( var j = 0; j < word.length; j++){
         if(word[j] === word2[i]){
             count++;
             counter++;
-
-
-        
-        if(count>1){
-            
-            counter--;
-        }}
+        }else if ( count > 1){
+            count = 0;
+            counter-- ;
+        }
         
     }
 }

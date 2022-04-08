@@ -1,12 +1,11 @@
 // Only change code below this line
 function splitArrayInGroups(arr, n){
-    var index = 0;
+  
     var arrayLength = arr.length;
     var tempArray = [];
     
-    for (var i = 0; i < arrayLength; index += n) {
+    for (var i = 0; i < arrayLength; i += n) {
         var myChunk = arr.slice(i, i+n);
-        // Do something if you want with the group
         tempArray.push(myChunk);
     }
 
